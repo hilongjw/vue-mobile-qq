@@ -1,6 +1,6 @@
 # vue-mobile-qq
 > vue webapp demo
 
-## preivew
+## preview
 ![](https://github.com/hilongjw/vue-mobile-qq/blob/master/preview.gif)
 
