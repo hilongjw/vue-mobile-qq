@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="169px" height="169px" viewBox="0 0 169 169" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>msg-plus</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M90,72 L90,6.00237186 C90,2.68870899 87.3137085,0 84,0 C80.6930342,0 78,2.68735342 78,6.00237186 L78,72 L6.00237186,72 C2.68870899,72 0,74.6862915 0,78 C0,81.3069658 2.68735342,84 6.00237186,84 L78,84 L78,162.997628 C78,166.311291 80.6862915,169 84,169 C87.3069658,169 90,166.312647 90,162.997628 L90,84 L162.997628,84 C166.311291,84 169,81.3137085 169,78 C169,74.6930342 166.312647,72 162.997628,72 L90,72 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="169" height="169" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="msg-plus" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-1"></use>
+    </g>
+</svg>

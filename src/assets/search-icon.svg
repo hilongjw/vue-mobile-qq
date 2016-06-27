@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="74px" height="74px" viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M55.4682854,45.1535357 L55.4682854,45.1535357 C55.6928082,44.866071 57.1480803,45.0583432 58.7223568,45.5842004 L59.0502204,45.693717 L59.4206362,45.5720432 C60.9994294,45.0534432 62.2792943,45.1535357 62.2792943,45.1535357 L62.2792943,45.1535357 L61.7584809,73.4832789 C61.7279761,75.1425933 60.351439,76.4877335 58.703667,76.4877335 L58.8744,76.4877335 C57.2177777,76.4877335 55.8573516,75.1413422 55.8358397,73.4832789 L55.4682854,45.1535357 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="6.81100893" height="31.4676144" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Rectangle-1" stroke="#979797" mask="url(#mask-2)" stroke-width="2" fill="#9B9B9B" transform="translate(58.873790, 60.753926) rotate(-45.000000) translate(-58.873790, -60.753926) " xlink:href="#path-1"></use>
+        <circle id="Oval-1" stroke="#979797" stroke-width="3" cx="30" cy="30" r="26"></circle>
+    </g>
+</svg>
