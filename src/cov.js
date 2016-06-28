@@ -169,16 +169,19 @@ class Cov {
     }
 
     touchStart (e) {
+        e.preventDefault()
         this.state.swiping = true
         this.touch.start = this.getPosition(e)[0]
     }
 
     touchMove (e) {
+        e.preventDefault()
         this.touch.end = this.getPosition(e)[0]
         this.notice('swiping', this.getRect(this.touch.end, this.touch.start))
     }
 
     touchEnd (e) {
+        e.preventDefault()
         this.notice('swiped', this.getRect(this.touch.end, this.touch.start))
         this.state.swiping = true
         let angle = this.getAngle(this.touch.end, this.touch.start)
@@ -197,6 +200,7 @@ class Cov {
     }
 
     touchCancel (e) {
+        e.preventDefault()
         console.log(e)
     }
 }
