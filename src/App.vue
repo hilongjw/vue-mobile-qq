@@ -12,13 +12,14 @@ body {
     overflow: hidden;
 }
 .cov-nav-bar {
-    position: fixed;
     bottom: 0;
     width: 100%;
     display: flex;
     height: 4rem;
     border-top: 1px solid #eaeaea;
     background: #fff;
+    transform: translate3d(0, 0, 0);
+    transition: transform .5s;
 }
 .cov-nav-bar-item {
     flex: 1;
@@ -87,6 +88,9 @@ body {
     transform: translate3d(0, 0, 0);
 }
 #app.slide-active .cov-view {
+    transform: translate3d(18rem, 0, 0);
+}
+#app.slide-active .cov-nav-bar {
     transform: translate3d(18rem, 0, 0);
 }
 #app.without-bottom-nav .view-container {

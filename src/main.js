@@ -20,6 +20,7 @@ Vue.prototype.$Cov = {
     }
 }
 
-Vue.prototype.$swipe = new Cov()
+let swiper = new Cov()
+Vue.prototype.$swipe = swiper
 
 router.start(App, 'app')

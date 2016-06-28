@@ -84,16 +84,21 @@
         padding: 0 .5rem;
         box-sizing: border-box;
     }
+    .cov-view-left-btn-icon {
+        height: 1rem;
+        vertical-align: text-bottom;
+        margin-right: .2rem;
+    }
 </style>
 
 <template>
     <div class="cov-view cov-chat">
         <header class="cov-view-header">
             <div class="cov-view-header-left">
-                <button class="cov-view-left-btn" v-link="{ name: 'message' }">< 消息(99+)</button>
+                <button class="cov-view-left-btn" v-link="{ name: 'message' }"> <img src="../assets/arrow.svg" class="cov-view-left-btn-icon">消息(99+)</button>
             </div>
             <div class="cov-view-header-center">
-                <span class="cov-chat-title">安成建</span>
+                <span class="cov-chat-title">长者</span>
             </div>
             <div class="cov-view-header-right">
                 <svg class="cov-message-sub-nav-plus-icon" viewBox="0 0 169 169" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
