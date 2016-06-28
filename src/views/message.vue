@@ -63,6 +63,8 @@
     }
     .cov-message-search-box {
         padding: .3rem .5rem;
+        background: #fff;
+        margin-bottom: -1px;
     }
     .cov-message-search {
         display: flex;
@@ -81,7 +83,10 @@
         margin: .45rem .2rem 0 0;
     }
     .cov-loading {
-        height: 3rem;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
         background: #4a4a4a;
         color: #fff;
         text-align: center;
@@ -115,15 +120,15 @@
                 </svg>
             </div>
         </header>
-        <div class="view-container" :style="{ 'transform': 'translate3d(0,'+ top + 'px,0)' }">
-            <div class="cov-loading" v-show="loading">释放立即刷新</div>
-            <div class="cov-message-search-box">
+        <div class="view-container">
+            <div class="cov-loading" >释放立即刷新</div>
+            <div class="cov-message-search-box" :style="{ 'transform': 'translate3d(0,'+ top + 'px,0)' }">
                 <div class="cov-message-search">
                     <img class="cov-message-search-icon" src="../assets/search-icon.svg">
                     <span>搜索</span>
                 </div>
             </div>
-            <div class="cov-message-chat-box">
+            <div class="cov-message-chat-box" :style="{ 'transform': 'translate3d(0,'+ top + 'px,0)' }">
                 <message v-link="{ name: 'chat' }" v-for="item in messages" :message="item"></message>
             </div>
         </div>
@@ -160,7 +165,8 @@
                         this.swipingTimer = setTimeout(() => {
                             this.moving(0)
                             this.swipingTimer = null
-                        }, 100)
+                        }, 200)
+                        this.refresh()
                         this.moving(end.y - start.y - 20)
                     }
                 })
@@ -175,6 +181,7 @@
         data () {
             return {
                 swipingTimer: null,
+                refreshTimer: null,
                 top: 0,
                 loading: false,
                 messages: [{
@@ -260,10 +267,14 @@
                 this.top = len
             },
             refresh () {
-                this.loading = true
-                setTimeout(() => {
+                if (this.refreshTimer) {
+                    clearTimeout(this.refreshTimer)
+                }
+                this.refreshTimer = setTimeout(() => {
                     this.loading = false
+                    this.refreshTimer = false
                 }, 2000)
+                this.loading = true
             }
         }
     }

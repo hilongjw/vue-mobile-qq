@@ -120,6 +120,7 @@
         },
         data () {
             return {
+                closeToken: '',
                 swiping: 0,
                 menu: false
             }
@@ -129,14 +130,13 @@
         },
         methods: {
             add () {
-                let closeToken
                 this.$swipe.listen('swipe-left', this.$el, () => {
                     this.swiping = -160
                     this.menu = true
-                    closeToken = this.$swipe.listen('swipe-right', this.$el, () => {
+                    this.closeToken = this.$swipe.listen('swipe-right', this.$el, () => {
                         this.swiping = 0
                         this.menu = false
-                        this.$swipe.leave('swipe-right', closeToken)
+                        this.$swipe.leave('swipe-right', this.closeToken)
                     })
                 })
 
