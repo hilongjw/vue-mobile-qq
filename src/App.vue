@@ -32,7 +32,7 @@ body {
     color: blue;
 }
 .slide-nav {
-    background-image: url(./assets/slidenav.png);
+    background-image: url(http://covteam.u.qiniudn.com/slidenav.png);
     background-size: cover;
     height: 100%;
     width: 18rem;
@@ -49,7 +49,7 @@ body {
     display: flex;
 }
 .cov-slide-avatar {
-    background-image: url(./assets/cov.jpeg);
+    background-image: url(http://covteam.u.qiniudn.com/cov.jpeg);
     width: 3rem;
     height: 3rem;
     border: .2rem solid #fff;
@@ -66,14 +66,13 @@ body {
 }
 .cov-slide-user-level-icon {
     display: inline-block;
-    background-image: url(./assets/start.png);
+    background-image: url(http://covteam.u.qiniudn.com/start.png);
     height: 1rem;
     width: 1rem;
     background-size: 2rem 1rem;
     background-position: 1rem 0;
 }
 .cov-slide-user-level-icon.sun {
-    background-image: url(./assets/start.png);
     height: 1rem;
     width: 1rem;
     background-size: 2rem 1rem;
